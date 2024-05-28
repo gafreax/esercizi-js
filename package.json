@@ -1,0 +1,14 @@
+{
+  "name": "esercizi",
+  "version": "1.0.0",
+  "main": "es-01.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Gabriele Fontana <gafreax@gmail.com>",
+  "license": "MIT",
+  "description": "Semplci esericizi per iniziare a familiarizzare con javascript",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
