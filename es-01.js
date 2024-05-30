@@ -22,7 +22,7 @@
  *  console.log(risultato) // 1,2,3,4,5,6
  */
 function spreadIsFunConcatenareDueArray (arr1, arr2) {
-
+  // Completa qui
 }
 
 /**
@@ -38,10 +38,22 @@ function spreadIsFunConcatenareDueArray (arr1, arr2) {
  * [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date]
  */
 function spreadIsFunAggiungereUnCampo (parametro) {
+  // Completa qui
+}
 
+/**
+ * Questa funzione deve restituire una stringa che è la concatenazione di tutte le stringhe passate come argomenti.
+ *
+ * Esempio:
+ *   spreadIsFunConcatenaStringhe("Ciao", " ", "mondo", "!")
+ *   // Restituisce: "Ciao mondo!"
+ */
+function spreadIsFunConcatenaStringhe (...stringhe) {
+  // Completa qui
 }
 
 module.exports = {
   spreadIsFunConcatenareDueArray,
-  spreadIsFunAggiungereUnCampo
+  spreadIsFunAggiungereUnCampo,
+  spreadIsFunConcatenaStringhe
 }
