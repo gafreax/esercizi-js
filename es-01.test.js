@@ -1,4 +1,4 @@
-const { spreadIsFunAggiungereUnCampo, spreadIsFunConcatenareDueArray, spreadIsFunConcatenaStringhe } = require('./es-01`.js')
+const { spreadIsFunAggiungereUnCampo, spreadIsFunConcatenareDueArray, spreadIsFunConcatenaStringhe } = require('./es-01.js')
 
 test('spreadIsFunAggiungereUnCampo', () => {
   const oggetto = { prodotto: 'orologio', prezzo: 123.32, marca: 'seiko' }
