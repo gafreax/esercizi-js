@@ -31,7 +31,7 @@ function spreadIsFunConcatenareDueArray (arr1, arr2) {
 }
 
 /**
- * Questa funzione deve restituire un oggetto aggiunga al parametro il campo data.
+ * Questa funzione deve restituire un oggetto che aggiunga al parametro il campo data.
  *
  * esempio:
  *  parametro = { prodotto: "orologio", prezzo: 123.32, marca: "seiko" }
@@ -55,6 +55,7 @@ function spreadIsFunAggiungereUnCampo (parametro) {
  */
 function spreadIsFunConcatenaStringhe (...stringhe) {
   // Completa qui
+  return stringhe.join('');
 }
 
 module.exports = {
