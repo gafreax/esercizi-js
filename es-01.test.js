@@ -11,10 +11,13 @@ test('spreadIsFunAggiungereUnCampo', () => {
 test('spreadIsFunConcatenareDueArray', () => {
   const arr1 = [1, 2, 3]
   const arr2 = [4, 5, 6]
+  const expected = [1, 2, 3, 4, 5, 6]
 
   const result = spreadIsFunConcatenareDueArray(arr1, arr2)
 
-  expect(result).toEqual([1, 2, 3, 4, 5, 6])
+  expect(result).toEqual(expected)
+  expect(result).not.toEqual([arr1, arr2])
+  expect(result.length).toEqual(6)
 })
 
 test('spreadIsFunConcatenaStringhe', () => {
