@@ -21,14 +21,18 @@
  *  const risultato = spreadIsFunConcatenareDueArray([1,2,3], [4,5,6] )
  *  console.log(risultato) // 1,2,3,4,5,6
  */
+
 function spreadIsFunConcatenareDueArray (arr1, arr2) {
   // Completa qui
 
- //return [...arr1, ...arr2];
- 
   const combinaArray = [...arr1, ...arr2];
+  // const combinaArray = arr1.concat(arr2);
   return combinaArray;
 }
+
+const risultato = spreadIsFunConcatenareDueArray([1,2,3], [4,5,6] )
+console.log(risultato) // 1,2,3,4,5,6
+
 
 /**
  * Questa funzione deve restituire un oggetto che aggiunga al parametro il campo data.
@@ -42,9 +46,22 @@ function spreadIsFunConcatenareDueArray (arr1, arr2) {
  * la data si può mettere come stringa fissa copiandola da quella messa qui in descrizione oppure usando la funizone new Date()
  * [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date]
  */
+
 function spreadIsFunAggiungereUnCampo (parametro) {
   // Completa qui
+
+  const parametroConData = {
+    ...parametro,
+    data: new Date(),
+  };
+
+  return parametroConData;
 }
+
+const parametro = { prodotto: "orologio", prezzo: 123.32, marca: "seiko" };
+const risultato2 = spreadIsFunAggiungereUnCampo(parametro);
+console.log(risultato2);
+
 
 /**
  * Questa funzione deve restituire una stringa che è la concatenazione di tutte le stringhe passate come argomenti.
@@ -55,8 +72,13 @@ function spreadIsFunAggiungereUnCampo (parametro) {
  */
 function spreadIsFunConcatenaStringhe (...stringhe) {
   // Completa qui
-  return stringhe.join('');
+  const stringheConcatenate = stringhe.join("");
+  return stringheConcatenate;
 }
+
+const risultatato3 = spreadIsFunConcatenaStringhe("Ciao", " ", "mondo", "!");
+console.log(risultatato3);
+
 
 module.exports = {
   spreadIsFunConcatenareDueArray,
