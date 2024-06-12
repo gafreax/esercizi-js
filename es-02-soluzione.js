@@ -7,7 +7,7 @@ function callbackIsFunStampaArray (array, callback) {
 }
 
 function callbackIsFunCompose(param, funOne, funTwo) {
-    return funTwo(funOne(param))
+  return funTwo(funOne(param))
 }
 
 function callbackIsFunMappaPotenza(parametro) {
