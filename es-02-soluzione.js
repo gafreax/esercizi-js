@@ -1,5 +1,5 @@
 function callbackIsFunFiltra(array, callback) {
-    return array.map( element => callback(element))
+    return array.filter(callback)
 }
 
 function callbackIsFunStampaArray (array, callback) {
@@ -10,8 +10,13 @@ function callbackIsFunCompose(param, funOne, funTwo) {
     return funTwo(funOne(param))
 }
 
+function callbackIsFunMappaPotenza(parametro) {
+  return parametro.map( e => e*e)
+}
+
 module.exports = {
     callbackIsFunFiltra,
     callbackIsFunStampaArray,
+    callbackIsFunMappaPotenza,
     callbackIsFunCompose
 }

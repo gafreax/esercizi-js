@@ -1,11 +1,11 @@
-const { callbackIsFunFiltra, callbackIsFunStampaArray } = require('./es-02.js')
+const { callbackIsFunFiltra, callbackIsFunStampaArray, callbackIsFunMappaPotenza } = require('./es-02.js')
 
 test('callbackIsFunFiltra', () => {
     const numeri = [1, 2, 3, 4, 5]
     
     const numeriPari = callbackIsFunFiltra(numeri, (numero) => numero % 2 === 0)
     
-    expect(numeriPari).toEqual([false, true, false, true, false])
+    expect(numeriPari).toHaveLength(2)
 })
 
 test('callbackIsFunStampaArray', () => {
@@ -16,4 +16,15 @@ test('callbackIsFunStampaArray', () => {
     
     expect(mockCallback.mock.calls).toHaveLength(numeri.length)
 })
+
+
+
+test('callbackIsFunMappaPotenza', () => {
+  const param = [ 2, 3, 4 ]
+  
+  const ristultato = callbackIsFunMappaPotenza(param)
+
+  expect(ristultato).toEqual([ 4, 9, 16 ])
+})
+
 

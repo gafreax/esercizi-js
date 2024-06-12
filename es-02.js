@@ -22,6 +22,20 @@ function callbackIsFunFiltra(array, callback) {
 }
 
 /**
+ * Questa funzione ha un array come parametro e ritorna un array dove i valori dell'array
+ * parametro vengono elevati a potenza
+ *
+ * Esempio
+ * const parametro = [ 2, 4, 8 ]
+ * const risultato = callbackIsFunMappaPotenza(parametro)
+ * // risultato --> [ 4, 16, 64 ]
+ */
+function callbackIsFunMappaPotenza(parametro) {
+  // Completa qui
+}
+
+
+/**
  * Questa funzione deve utilizzare la funzione di callback per stampare a video i dati presenti nell'array
  * esempio:
  * spreadIsFunStampaArray([1,2,3,4,5], (numero) => console.log("n ==> ",  numero))
