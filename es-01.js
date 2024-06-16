@@ -25,7 +25,6 @@ function spreadIsFunConcatenareDueArray (arr1, arr2) {
   // Completa qui
 
  //return [...arr1, ...arr2];
- 
   const combinaArray = [...arr1, ...arr2];
   return combinaArray;
 }
