@@ -1,14 +1,13 @@
 /**
  * Installazione: prima di iniziare lanciare il comando npm i
  * Consegna: completare le seguenti funzioni. Per verificare il loro corretto funzionamento lanciare il comando
- * npm 
+ * npm
  */
 
 /**
  * Questi esercizi servono per capire come utilizzare le callback
  * [https://developer.mozilla.org/en-US/docs/Glossary/Callback_function]
  */
-
 
 /**
  * Questa funzione filtra un array in base a una condizione definita da una funzione di callback.
@@ -17,8 +16,8 @@
  *   const numeri = [1, 2, 3, 4, 5];
  *   const numeriPari = callbackIsFunFiltra(numeri, (numero) => numero % 2 === 0);
  */
-function callbackIsFunFiltra(array, callback) {
-    // Completa qui
+function callbackIsFunFiltra (array, callback) {
+  // Completa qui
 }
 
 /**
@@ -30,16 +29,15 @@ function callbackIsFunFiltra(array, callback) {
  * const risultato = callbackIsFunMappaPotenza(parametro)
  * // risultato --> [ 4, 16, 64 ]
  */
-function callbackIsFunMappaPotenza(parametro) {
+function callbackIsFunMappaPotenza (parametro) {
   // Completa qui
 }
-
 
 /**
  * Questa funzione deve utilizzare la funzione di callback per stampare a video i dati presenti nell'array
  * esempio:
  * spreadIsFunStampaArray([1,2,3,4,5], (numero) => console.log("n ==> ",  numero))
- * Stampa a video: 
+ * Stampa a video:
  * n ==> 1
  * n ==> 2
  * n ==> 3
@@ -47,7 +45,7 @@ function callbackIsFunMappaPotenza(parametro) {
  * n ==> 5
  */
 function callbackIsFunStampaArray (array, callback) {
-    // Completa qui
+  // Completa qui
 }
 
 /**
@@ -58,11 +56,13 @@ function callbackIsFunStampaArray (array, callback) {
  *  const funTwo = (param) => param * 2
  * Risultato dopo la composizione se param vale 5: 12
  */
-function callbackIsFunCompose(param, funOne, funTwo) {
+function callbackIsFunCompose (param, funOne, funTwo) {
 // Completa qui
 }
 
 module.exports = {
-    callbackIsFunFiltra,
-    callbackIsFunStampaArray
+  callbackIsFunCompose,
+  callbackIsFunFiltra,
+  callbackIsFunMappaPotenza,
+  callbackIsFunStampaArray
 }

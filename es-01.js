@@ -24,9 +24,9 @@
 function spreadIsFunConcatenareDueArray (arr1, arr2) {
   // Completa qui
 
- //return [...arr1, ...arr2];
-  const combinaArray = [...arr1, ...arr2];
-  return combinaArray;
+  // return [...arr1, ...arr2];
+  const combinaArray = [...arr1, ...arr2]
+  return combinaArray
 }
 
 /**
@@ -54,7 +54,7 @@ function spreadIsFunAggiungereUnCampo (parametro) {
  */
 function spreadIsFunConcatenaStringhe (...stringhe) {
   // Completa qui
-  return stringhe.join('');
+  return stringhe.join('')
 }
 
 module.exports = {

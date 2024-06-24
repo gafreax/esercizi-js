@@ -1,3 +1,4 @@
+/* eslint-env jest */
 const { spreadIsFunAggiungereUnCampo, spreadIsFunConcatenareDueArray, spreadIsFunConcatenaStringhe } = require('./es-01.js')
 
 test('spreadIsFunAggiungereUnCampo', () => {
