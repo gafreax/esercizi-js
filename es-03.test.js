@@ -1,5 +1,5 @@
 /* eslint-env jest */
-const { foreachIsFunCall, renderingIsFunListe, reduceIsFunMedia } = require('./es-03-soluzione.js')
+const { foreachIsFunCall, renderingIsFunListe, reduceIsFunMedia } = require('./es-03.js')
 
 describe('es-03', () => {
   test('foreachIsFun', () => {
